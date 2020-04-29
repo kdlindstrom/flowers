@@ -7,41 +7,50 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.5.0.js"></script>
-    <script src="/js/scripts.js" charset="utf-8"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
   </head>
   <body class="animate-in">
-    <script>
-    jQuery('body').css('display','none');
-    jQuery(document).ready(function() {
-      jQuery('body').fadeIn();
-      jQuery('a').on('click',function(event){
-        var thetarget = this.getAttribute('target')
-        if (thetarget != "_blank"){
-          var thehref = this.getAttribute('href')
-          event.preventDefault();
-          jQuery('body').fadeOut(function(){
-            window.location = thehref
-          });
-        }
-      });
-    });
-    setTimeout(function(){
-      jQuery('body').fadeIn();
-    },1000)
-  </script>
-    <div class="outer-wrapper">
-      <div class="wrapper">
-        <div class="screen one"></div>
-        <div class="screen two"></div>
-        <div class="screen three"></div>
-        <div class="screen four"></div>
-        <div class="screen five"></div>
-        <div class="screen six"></div>
-        <div class="screen seven"></div>
 
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 fullCarImg" id="floor" src="img/floor.jpg" alt="First slide">
       </div>
-
+      <div class="carousel-item">
+        <img class="d-block w-100 fullCarImg" id="kitchen" src="img/kitchen.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 fullCarImg" id="shelf" src="img/shelf.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 fullCarImg" id="seating" src="img/seating.jpg" alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 fullCarImg" id="table" src="img/table.jpg" alt="Fifth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 fullCarImg" id="hand" src="img/hand.jpg" alt="Sixth slide">
+      </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
     <div class="navbar">
     <h3>placeholder name</h3>
     <a href="portfolio.html" class="active">home</a>
