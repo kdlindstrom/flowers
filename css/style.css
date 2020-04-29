@@ -216,15 +216,16 @@ margin-bottom: -10%;
    up:-5%;
    border:none;
    border-radius: 0;
-   background:none;
+
 }
 .modal-header{
   height:0px;
   border:none;
 }
+.d-block {
+  height:90vh;
+  width:70vh;
 
-#carouselExample{
-  height:100vh;
 }
 
 .container {
