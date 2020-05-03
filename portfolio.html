@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Hanah Fazendin</title>
-    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-3.5.0.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/scripts.js" charset="utf-8"></script>
-  </head>
-  <body class="animate-in">
-
-    <!DOCTYPE html>
+  <!DOCTYPE html>
     <html lang="en" dir="ltr">
     <head>
       <meta charset="utf-8">
       <title></title>
       <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/animate.css">
       <link rel="stylesheet" href="css/style.css">
       <script src="js/jquery-3.5.0.js"></script>
       <script src="js/bootstrap.bundle.js"></script>
@@ -74,15 +61,19 @@
 
       -->
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
+      <div class="modal animated slideInUp" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document" id=portfolioModalDialog>
+          <div class="modal-content w3-animate-bottom" id="portfolioModalContent">
             <div class="modal-header">
+              <div class="navbar">
+                <h3>placeholder name</h3>
+
+              </div>
               <button type="button" class="close modalcloser" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" >
             <div class="container">
             <div class="row" id="gallery">
               <div class="col-lg-4 col-md-6 col-sm-12 gallerycolumn">
@@ -110,14 +101,14 @@
         </div>
       </div>
 
-        <div class="navbar">
+        <div class="navbar" id="bottomNavbar">
           <h3>placeholder name</h3>
           <a href="portfolio.html" class="active">home</a>
           <a href="weddings.html">weddings</a>
           <a href="#blog">blog</a>
           <a href="#blog">contact</a>
 
-          <button type="button" class="btn btn-primary" id="portfolioGalleryButton" data-toggle= "modal" data-target="#exampleModal">
+          <button type="button" class="btn btn-primary" id="portfolioGalleryButton" data-toggle= "modal" data-target="#portfolioModal">
     gallery view
   </button>
 
